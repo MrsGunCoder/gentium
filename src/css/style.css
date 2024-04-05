@@ -25,15 +25,16 @@
 header {
   background-color: black;
   width: 1519px;
-  height: 170px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: aliceblue;
   padding: 25px;
- 
- 
-  
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
   h1 {
     margin-left: 145px;
   }
@@ -141,7 +142,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: end;
-    .box {
+
+  .box {
       width: 380px;
       height: 385px;
       background-color: #1b1b1b;
@@ -149,6 +151,14 @@ main {
       flex-direction: column;
       padding: 60px 40px;
       margin-bottom: 145px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #e9204f;
+      }
+      &:hover svg {
+        color: #fff;
+      }
 
       .textDiv {
         width: 300px;
@@ -168,7 +178,7 @@ main {
         width: 48px;
         height: 48px;
         width: 48px;
-      height: 48px;
+        height: 48px;
       }
       h2 {
         font-size: 25px;
@@ -179,15 +189,9 @@ main {
       p {
         color: aliceblue;
         /* margin-top: 15px; */
-      
       }
     }
   }
-}
-
-.secondSection {
-  width: 100%;
-  height: 900px;
 }
 
 /* .box1{
@@ -197,34 +201,46 @@ main {
     
 } */
 
-.secondSection{
-  span{
+.secondSection {
+  width: 100%;
+  height: 900px;
+
+  span {
     color: #e9204f;
   }
-  h1{
+  h1 {
     width: 840px;
-      height: 160px;
-      font-size: 78px;
-      margin-top: 45px;
-      position: relative;
+    height: 160px;
+    font-size: 78px;
+    margin-top: 45px;
+    position: relative;
   }
-  .boxes{
+  .boxes {
     width: 1260px;
     height: 455px;
     position: relative;
     display: flex;
     gap: 30px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: end;
     margin-left: 125px;
+
     .box {
       width: 380px;
       height: 385px;
-      background-color:#abb8c3;
+      background-color: #abb8c3;
       display: flex;
       flex-direction: column;
       padding: 60px 40px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #e9204f;
+      }
+      &:hover svg {
+        color: #fff;
+      }
 
       .textDiv {
         width: 300px;
@@ -240,69 +256,36 @@ main {
         height: 48px;
       }
       svg {
-        color:#e9204f;
+        color: #e9204f;
         width: 48px;
         height: 48px;
         width: 48px;
-      height: 48px;
+        height: 48px;
       }
       h2 {
         font-size: 25px;
-        color:#1b1b1b;
+        color: #1b1b1b;
         margin-top: 15px;
       }
 
       p {
         color: #1b1b1b;
         margin-top: 15px;
-        
       }
     }
   }
-}
 
-  .text1{
+  .text1 {
     margin-top: 125px;
     margin-left: 140px;
   }
 
-
-  .boxes1{
-    width: 1260px;
-    height: 455px;
-    position: relative;
-    display: flex;
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    margin-left: 125px; 
-    .box{
-      width: 380px;
-      height: 385px;
-      background-color:#abb8c3;
-      display: flex;
-      flex-direction: column;
-      padding: 60px 40px;
-      .textDiv{
-        width: 300px;
-        height: 138px;
-        position: relative;
-        margin-top: 55px;
-      }
-    }
-    
-  }
-  .boxes1:hover{
-    color: #e9204f;
-  }
-  
   svg {
-    color:#e9204f;
+    color: #e9204f;
     width: 48px;
     height: 48px;
     width: 48px;
-  height: 48px;
+    height: 48px;
   }
   h2 {
     font-size: 25px;
@@ -315,5 +298,4 @@ main {
     /* margin-top: 15px; */
     color: white;
   }
-   
-    
+}
