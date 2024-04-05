@@ -1,0 +1,319 @@
+@import url(https://db.onlinewebfonts.com/c/65dc1b4fb1cd6bf31e730421533dafc7?family=ITC+Avant+Garde+Gothic+W02+Md);
+
+@font-face {
+  font-family: "avant-garde";
+
+  src: url("https://db.onlinewebfonts.com/t/65dc1b4fb1cd6bf31e730421533dafc7.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/65dc1b4fb1cd6bf31e730421533dafc7.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/65dc1b4fb1cd6bf31e730421533dafc7.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/65dc1b4fb1cd6bf31e730421533dafc7.ttf")
+      format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "avant-garde";
+}
+
+header {
+  background-color: black;
+  width: 1519px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: aliceblue;
+  padding: 25px;
+ 
+ 
+  
+  h1 {
+    margin-left: 145px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  li {
+    padding: 25px;
+    font-size: 16px;
+    width: 46px;
+    height: 36px;
+    margin-right: 35px;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+.firstSection {
+  width: 100%;
+  height: 1131px;
+  background-color: #000000;
+  background-image: url(../assets/images/hero_02.jpg);
+  background-position: 70% 0%;
+  background-repeat: no-repeat;
+  background-size: 640px auto;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 140px;
+
+  .text {
+    width: 1260px;
+    height: 505px;
+    padding: 70px 30px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      width: 840px;
+      height: 160px;
+      font-size: 78px;
+      margin-top: 45px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        border-radius: 10px;
+        background-color: red;
+        width: 70px;
+        top: -85px;
+        left: 0;
+      }
+    }
+
+    .btn_start {
+      width: 190px;
+      height: 60px;
+      border: 2px solid #e9204f;
+      padding: 20px 0px;
+      color: #ffffff;
+      font-weight: 640;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin-top: 95px;
+      font-size: 16px;
+      background: none;
+
+      &::after {
+        background-color: #e9204f;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        z-index: -1;
+        transition: 0.4s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .boxes {
+    width: 1260px;
+    height: 455px;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    .box {
+      width: 380px;
+      height: 385px;
+      background-color: #1b1b1b;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 40px;
+      margin-bottom: 145px;
+
+      .textDiv {
+        width: 300px;
+        height: 138px;
+        position: relative;
+        margin-top: 55px;
+      }
+
+      i {
+        font-size: 48px;
+        color: #fff;
+        width: 48px;
+        height: 48px;
+      }
+      svg {
+        color: #fff;
+        width: 48px;
+        height: 48px;
+        width: 48px;
+      height: 48px;
+      }
+      h2 {
+        font-size: 25px;
+        color: aliceblue;
+        margin-top: 15px;
+      }
+
+      p {
+        color: aliceblue;
+        /* margin-top: 15px; */
+      
+      }
+    }
+  }
+}
+
+.secondSection {
+  width: 100%;
+  height: 900px;
+}
+
+/* .box1{
+  border: 1px solid black;
+  margin: 15px;
+  width: ;
+    
+} */
+
+.secondSection{
+  span{
+    color: #e9204f;
+  }
+  h1{
+    width: 840px;
+      height: 160px;
+      font-size: 78px;
+      margin-top: 45px;
+      position: relative;
+  }
+  .boxes{
+    width: 1260px;
+    height: 455px;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-left: 125px;
+    .box {
+      width: 380px;
+      height: 385px;
+      background-color:#abb8c3;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 40px;
+
+      .textDiv {
+        width: 300px;
+        height: 138px;
+        position: relative;
+        margin-top: 55px;
+      }
+
+      i {
+        font-size: 48px;
+        color: #fff;
+        width: 48px;
+        height: 48px;
+      }
+      svg {
+        color:#e9204f;
+        width: 48px;
+        height: 48px;
+        width: 48px;
+      height: 48px;
+      }
+      h2 {
+        font-size: 25px;
+        color:#1b1b1b;
+        margin-top: 15px;
+      }
+
+      p {
+        color: #1b1b1b;
+        margin-top: 15px;
+        
+      }
+    }
+  }
+}
+
+  .text1{
+    margin-top: 125px;
+    margin-left: 140px;
+  }
+
+
+  .boxes1{
+    width: 1260px;
+    height: 455px;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-left: 125px; 
+    .box{
+      width: 380px;
+      height: 385px;
+      background-color:#abb8c3;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 40px;
+      .textDiv{
+        width: 300px;
+        height: 138px;
+        position: relative;
+        margin-top: 55px;
+      }
+    }
+    
+  }
+  .boxes1:hover{
+    color: #e9204f;
+  }
+  
+  svg {
+    color:#e9204f;
+    width: 48px;
+    height: 48px;
+    width: 48px;
+  height: 48px;
+  }
+  h2 {
+    font-size: 25px;
+    color: #1b1b1b;
+    margin-top: 15px;
+  }
+
+  p {
+    color: #1b1b1b;
+    /* margin-top: 15px; */
+    color: white;
+  }
+   
+    
